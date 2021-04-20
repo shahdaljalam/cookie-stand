@@ -1,5 +1,6 @@
 body {
 text-align: center;
+background-color: coral;
 }
 
 div {
@@ -9,9 +10,11 @@ div {
 table{
     display: block;
     margin-top: 20px;
+    color: rgb(10, 10, 10);
 }
 
 table, th, td {
     border: 1px solid black;
     padding: 5px;
+    background-color: cornsilk;
 }
