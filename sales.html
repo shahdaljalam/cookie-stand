@@ -14,16 +14,23 @@
     <p>pat's salmon cookies : sales data</p>
     <div id="table">
     </div>
-<form >
-    <label for="place name">name</label>
-    <input type="text">
-    <label for="minCust">minCust</label>
-    <input type="text">
-    <label for="maxCust">maxCust</label>
-    <input type="text">
-    <label for="avgSale">avgSale</label>
-    <input type="text">
-</form>
+
+    <fieldset>
+        <legend>Add New City</legend>
+        <form id="cityForm" >
+            <label for="placeName">Name</label>
+            <input id="placeName" name="placeName" type="text" required>
+            <label for="minCust">MinCust</label>
+            <input id="minCust"  type="number"required max="100">
+            <label for="maxCust">MaxCust</label>
+            <input id="maxCust" type="number"required max="100">
+            <label for="avgSale">AvgSale</label>
+            <input id="avgSale" type="number" required max="100">
+        
+            <button type="submit">save</button>
+        </form>
+        
+    </fieldset>
 
     <script src="js/app.js"></script>
     </main>

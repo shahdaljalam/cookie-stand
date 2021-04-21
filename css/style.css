@@ -101,7 +101,11 @@ header a{
     }
 
    
-
+    fieldset{
+        font-size: 15px;
+        background-color:rgb(252, 166, 105) ;
+        font-weight:500;
+    }
 
 
 
@@ -127,6 +131,6 @@ table, th, td {
 p{
     font-size: 40px;
     text-align: center;
-    color: rgb(253, 78, 8);
+    color: rgb(202, 100, 27);
 
 }
