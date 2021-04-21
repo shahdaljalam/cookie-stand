@@ -98,11 +98,11 @@ function footer() {
     th1Ele.textContent = totalOfTotal;
 }
 
-new place('Seattle', '23', '65', '6.3');
-new place('Tokyo', '3', '24', '1.2');
-new place('Dubai', '11	', '38', '3.7');
-new place('Paris', '20', '38', '2.3');
-new place('Lima', '2', '16', '4.6');
+new place('Seattle', 23, 65, 6.3);
+new place('Tokyo', 3, 24, 1.2);
+new place('Dubai', 11, 38, 3.7);
+new place('Paris', 20, 38, 2.3);
+new place('Lima', 2, 16, 4.6);
 
 function render() {
     for (let i = 0; i < place.allCity.length; i++) {
