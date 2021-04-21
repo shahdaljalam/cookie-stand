@@ -1,7 +1,109 @@
-body {
-text-align: center;
-background-color: coral;
+body{
+    width: 960px;
+    margin: auto; }
+
+
+    header{
+        height: 90px;
+        align-items: center;
+        background-color: rgba(104, 100, 100, 0.952);
+        margin-top: 20px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+
+
+header a{
+    display:inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: rgb(248, 247, 247);
+    width: 100px;
+    background-color: rgb(58, 56, 56);   
+    margin-left: 130px;
 }
+
+
+    header img{
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    header p{
+        text-shadow: black;
+        display:inline-block;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        color: rgb(14, 13, 13);
+        font-size: 25px;
+        font-weight: 500;
+        font-weight:800;
+        margin: auto;
+    }
+
+  
+    h1{
+        align-items: center;
+        width: 920px;
+        text-align: center;
+        margin:20px;
+        color: chocolate;
+        font-size: 50px;
+    }
+         
+
+    main section:nth-child(2) {
+        background-color: rgb(58, 56, 56);
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        
+    }
+
+    main section:nth-child(3){
+        width: 960px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 20px;
+        padding: 15px;
+        
+        
+    }
+
+
+    nav img {
+        max-width: 185px;
+        max-height: 185px;  
+    }
+
+  
+
+    main section:nth-child(4){
+        width: 960px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+        
+
+    ul{
+        color: white;
+        background-color: rgb(62, 68, 68);
+        width: 250px;
+        margin-right: 50px;
+    }
+
+    h2{
+        text-align: center;
+        color: rgb(62, 68, 68);
+        margin-left: 40px;
+    }
+
+   
+
+
+
 
 div {
     display: inline-block;
@@ -11,10 +113,20 @@ table{
     display: block;
     margin-top: 20px;
     color: rgb(10, 10, 10);
+    align-items: center;
+    margin: auto;
+    margin-right: 40px;
 }
 
 table, th, td {
     border: 1px solid black;
     padding: 5px;
     background-color: cornsilk;
+}
+
+p{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(253, 78, 8);
+
 }
