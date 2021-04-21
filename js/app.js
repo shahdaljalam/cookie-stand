@@ -6,6 +6,8 @@ const parentElement = document.getElementById('table');
 const tableData = document.createElement('table');
 parentElement.appendChild(tableData);
 
+const cityForm = document.getElementById('cityForm');
+
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -111,6 +113,30 @@ function render() {
 }
 heading();
 render();
+
+cityForm.addEventListener('submit', eventButton)
+
+function eventButton(event){
+    event.preventDefault();
+    console.log(event.target.placeName.value);
+    const placeName = event.target.placeName.value;
+    const minCust = event.target.minCust.value
+    const maxCust = (event.target.maxCust.value);
+    const avgSale = (event.target.avgSale.value);
+
+    console.log(placeName,minCust,maxCust,avgSale)
+
+    while(tableData.firstChild){
+        tableData.removeChild(tableData.firstChild);
+    }
+
+    new place(placeName,minCust,maxCust,avgSale)
+
+    heading();
+    render();
+    footer();
+} 
+
 
 function getRandomValue(min, max) {
     min = Math.ceil(min);
